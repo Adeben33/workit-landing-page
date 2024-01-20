@@ -41,7 +41,7 @@ header .learn-more {
   margin-top: 40px;
 }
 
-header .learn-more a:link {
+a:link {
   display: inline-block;
   /* position: absolute; */
   text-align: center;
@@ -55,4 +55,103 @@ header .learn-more a:link {
 }
 
 .container .heading-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading-secondary img {
+  height: 405px;
+  width: 702px;
+  display: block;
+}
+
+.details-content {
+  font-size: 14px;
+  padding: 120px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+}
+.details {
+  font-family: "Fraunces", sans-serif;
+  width: 354px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.number {
+  height: 56px;
+  width: 56px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(88, 77, 98);
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.heading-small {
+  font-size: 32px;
+  margin: 40px 0 40px 0;
+}
+
+.text {
+  font-family: "Manrope";
+  text-align: center;
+}
+
+.action {
+  padding: 121px;
+  display: flex;
+  position: relative;
+}
+
+.action img {
+  height: 477px;
+  width: 477px;
+}
+
+.action .action-content {
+  height: 413px;
+  width: 730px;
+  padding: 80px;
+  background-color: rgb(36, 5, 62);
+  color: white;
+  position: absolute;
+  top: 41%;
+  left: 36%;
+}
+
+.action .action-content .heading-mid {
+  font-family: "Fraunces", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.action .action-content p {
+  width: 602px;
+  font-size: 18px;
+  font-family: "Manrope";
+  font-weight: 400;
+  color: 584D62;
+  padding: 20px 0 40px 0;
+}
+
+.action .action-content a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+}
+
+footer img {
+  height: 24px;
 }
