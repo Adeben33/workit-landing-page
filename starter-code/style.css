@@ -15,8 +15,15 @@ body {
 header {
   color: #fff;
   height: 730px;
+  width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 540.24px;
+  }
 }
 
 header:before {
@@ -28,15 +35,25 @@ header:before {
   height: 100%;
   background-color: #24053e;
   z-index: -1;
+  border-radius: 0 0 50% 50% / 0 0 15% 15%;
   /* clip-path: circle(61vh at 50% -6vh);
   transform: scale(1.9); */
 }
 
 header .heading {
-  padding: 24.61px 95.76px 24.61px 95.76px;
+  padding: 35px 95.76px 35px 95.76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  header .heading {
+    padding: 30px 24.61px 0px 24.61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 a:link {
@@ -52,6 +69,13 @@ a:link {
   background-color: rgb(68, 255, 161);
 }
 
+a:active,
+a:hover {
+  color: rgb(68, 255, 161);
+  border: 2px solid rgb(68, 255, 161);
+  background-color: #24053e;
+}
+
 header .heading p a {
   color: #fff;
   border-bottom: 3px solid rgb(68, 255, 161);
@@ -63,17 +87,35 @@ header .heading p a:link {
   padding: 0;
 }
 
+header .heading p a:active,
+header .heading p a:hover {
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 3px solid rgb(68, 255, 161);
+  color: rgb(68, 255, 161);
+}
+
 header .heading-text {
   font-family: "Fraunces";
   font-size: 80px;
   line-height: 1;
   font-weight: 600;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 header .heading-text span {
   display: inline-block;
   border-bottom: 3px solid rgb(68, 255, 161);
+}
+
+@media only screen and (max-width: 768px) {
+  header .heading-text {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+    /* margin-top: 30px; */
+  }
 }
 
 header .learn-more {
@@ -82,7 +124,22 @@ header .learn-more {
   margin-top: 40px;
 }
 
+.container .product {
+  width: 100%;
+  position: absolute;
+  top: 68vh;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .product {
+    top: 0vh;
+    left: 0;
+  }
+}
+
 .container .heading-secondary {
+  width: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +155,8 @@ header .learn-more {
   width: 100%;
   height: 100%;
   background-color: #fcf8ff;
-  z-index: -1;
+  z-index: -2;
+  border-radius: 0 0 50% 50% / 0 0 25% 25%;
   /* clip-path: circle(61vh at 50% -6vh);
   transform: scale(1.9); */
 }
@@ -116,6 +174,25 @@ header .learn-more {
   gap: 15px;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 768px) {
+  .container .product {
+    width: 100%;
+    position: absolute;
+    top: 60vh;
+    left: 0;
+  }
+
+  .heading-secondary img {
+    height: 296px;
+    width: 514px;
+    display: block;
+  }
+  .details-content {
+    flex-direction: column;
+  }
+}
+
 .details {
   font-family: "Fraunces", sans-serif;
   width: 354px;
@@ -123,6 +200,33 @@ header .learn-more {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .details {
+    font-family: "Fraunces", sans-serif;
+    /* width: 354px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.details {
+  font-family: "Fraunces", sans-serif;
+  /* width: 354px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 0 9.2px 0 9.2px; */
 }
 
 .number {
@@ -139,18 +243,28 @@ header .learn-more {
 
 .heading-small {
   font-size: 32px;
-  margin: 40px 0 40px 0;
+  margin: 40px 0 20px 0;
 }
 
 .text {
   font-family: "Manrope";
+  font-size: 16px;
   text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.text:first-child {
+  padding: 0 0px 0 0px;
+}
+.text:last-child {
+  padding: 0 40px 0 40px;
 }
 
 .action {
   padding: 121px;
   display: flex;
   position: relative;
+  margin-top: 600px;
 }
 
 .action img {
@@ -166,7 +280,7 @@ header .learn-more {
   color: white;
   position: absolute;
   top: 41%;
-  left: 36%;
+  left: 35%;
 }
 
 .action .action-content .heading-mid {
@@ -217,3 +331,5 @@ footer .footer a:link {
   padding: 0;
   margin: 0;
 }
+
+/* tablet media querry */
