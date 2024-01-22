@@ -127,19 +127,12 @@ header .learn-more {
 .container .product {
   width: 100%;
   position: absolute;
-  top: 68vh;
+  top: 43vh;
   left: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  .container .product {
-    top: 0vh;
-    left: 0;
-  }
-}
-
 .container .heading-secondary {
-  width: 100;
+  /* width: 100; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,7 +172,7 @@ header .learn-more {
   .container .product {
     width: 100%;
     position: absolute;
-    top: 60vh;
+    top: 50vh;
     left: 0;
   }
 
@@ -189,32 +182,15 @@ header .learn-more {
     display: block;
   }
   .details-content {
+    padding: 50px;
     flex-direction: column;
+    margin-bottom: 70px;
   }
 }
 
 .details {
   font-family: "Fraunces", sans-serif;
   width: 354px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media only screen and (max-width: 768px) {
-  .details {
-    font-family: "Fraunces", sans-serif;
-    /* width: 354px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-}
-.details {
-  font-family: "Fraunces", sans-serif;
-  /* width: 354px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,6 +234,43 @@ header .learn-more {
 }
 .text:last-child {
   padding: 0 40px 0 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-small {
+    width: 100%;
+    padding-left: 45px;
+    text-align: left;
+    font-size: 32px;
+    margin: 40px 0 20px 0;
+  }
+  .number {
+    height: 48px;
+    width: 82px;
+    border-radius: 50%;
+  }
+  .heading-small {
+    font-size: 32px;
+    margin: 0px 0 10px 0;
+  }
+  .details {
+    font-family: "Fraunces", sans-serif;
+    width: 600px;
+    display: flex;
+    /* justify-content: end; */
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .text {
+    padding: 0 0px 0 0px;
+    text-align: left;
+  }
+
+  .text:last-child {
+    padding: 0 45px 0 45px;
+  }
 }
 
 .action {
@@ -308,6 +321,49 @@ header .learn-more {
   display: block;
   height: 24px;
   margin: 80px 0 40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .action .action-content .heading-mid {
+    font-family: "Fraunces", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 05px;
+  }
+
+  .action {
+    padding: 40px;
+    margin-bottom: 160px;
+  }
+
+  .action img {
+    height: 281px;
+    width: 281px;
+  }
+
+  .action .action-content {
+    height: auto;
+    width: 514px;
+    padding: 50px;
+    background-color: rgb(36, 5, 62);
+    color: #fcfbff;
+    position: absolute;
+    top: 53%;
+    left: 29%;
+  }
+
+  .action .action-content p {
+    width: auto;
+    font-size: 16.5px;
+    padding: 10px 0 20px 0;
+  }
+
+  .action .action-content a {
+    font-weight: bold;
+    font-size: 14px;
+    width: 175px;
+    height: 55px;
+  }
 }
 
 .secondary-logo,
