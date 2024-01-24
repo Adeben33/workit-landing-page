@@ -26,6 +26,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  header {
+    height: 481.71px;
+  }
+}
+
 header:before {
   content: "";
   position: absolute;
@@ -188,6 +194,26 @@ header .learn-more {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .container .product {
+    width: 100%;
+    position: absolute;
+    top: 45vh;
+    left: 0;
+  }
+
+  .heading-secondary img {
+    height: 184px;
+    width: 320px;
+    display: block;
+  }
+  .details-content {
+    padding: 50px;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+}
+
 .details {
   font-family: "Fraunces", sans-serif;
   width: 354px;
@@ -273,6 +299,45 @@ header .learn-more {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .heading-small {
+    padding-left: 45px;
+    text-align: left;
+    font-size: 32px;
+    margin: 40px 0 20px 0;
+  }
+  .number {
+    height: 46px;
+    width: 48px;
+    border-radius: 50%;
+  }
+  .heading-small {
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    padding: 0;
+  }
+  .details {
+    text-align: center;
+    font-family: "Fraunces", sans-serif;
+    max-width: 481px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .text {
+    padding: 0 0px 0 0px;
+    text-align: center;
+  }
+
+  .text:last-child {
+    padding: 0 45px 0 45px;
+  }
+}
+
 .action {
   padding: 121px;
   display: flex;
@@ -333,6 +398,7 @@ header .learn-more {
 
   .action {
     padding: 40px;
+    margin-top: 650px;
     margin-bottom: 160px;
   }
 
@@ -363,6 +429,49 @@ header .learn-more {
     font-size: 14px;
     width: 175px;
     height: 55px;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .action .action-content .heading-mid {
+    font-family: "Fraunces", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .action {
+    padding: 120px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 770px;
+    margin-bottom: 0;
+  }
+  .action .action-content {
+    text-align: center;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    height: auto;
+    width: 481px;
+    padding: 25px;
+    background-color: rgb(36, 5, 62);
+    color: #fcfbff;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+  }
+
+  .secondary-logo img {
+    display: block;
+    height: 24px;
+    margin: 0px 0 0px 0;
+  }
+
+  .secondary-logo img {
+    display: block;
+    height: 24px;
+    margin: 180px 0 40px 0;
   }
 }
 
